@@ -1,0 +1,34 @@
+.footer-container{
+    height: 17.8%;
+    width: 100%;
+    overflow: hidden;
+    display: flex ;
+    justify-content:center;
+    
+}
+.footer-parent{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+}
+.footer-parent img{
+    width: 1920px;
+    height: 126px;
+    
+    
+}
+
+@media only screen and (min-width:1110px){
+    .footer-parent{
+        display: flex;
+        align-items: flex-end;
+    } 
+}
+
+@media only screen and (min-width:768px){
+    .footer-parent img{
+        width: 1920px;
+        height: 127px;
+    }
+}

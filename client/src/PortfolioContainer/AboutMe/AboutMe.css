@@ -1,0 +1,101 @@
+.about-me-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0 0 0;
+}
+.about-me-parent{
+    max-width: 1000px;
+    width: 70%;
+}
+.about-me-card{
+    display: flex;
+    width: 100%;
+    box-shadow:0 0px 20px -2px #1f2235;
+}
+.about-me-profile{
+    width: 45%;
+    background-image: url(../../assets/AboutMe/Ice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-me-details{
+    width: 48%;
+    text-align: justify;
+    padding: 30px;
+}
+.about-me-description{
+    font-size: 14px;
+}
+.about-me-highlights{
+    margin:55px 0;
+}
+.highlight-heading{
+    font-family: "Ubuntu";
+    font-size:15px;
+    margin: 0 0 5px 0;
+}
+.highlight{
+    display: flex;
+    align-items: center;
+    margin:5px 0;
+    font-size:13px;
+}
+.highlight-blob{
+    height:10px;
+    width:10px;
+    margin:0 10px 0 0;
+    background-color: var(--dark-orange);
+    border-radius:50%;
+}
+.about-me-options .highlighted-btn{
+    margin:0 0px 0 35px;
+}
+/* Responsiveess */
+@media only screen and (max-width: 1110px){
+    .about-me-parent{
+        width:88%;
+    }
+}
+@media only screen and (max-width:912px){
+    
+    .about-me-details{
+        width:100%;
+    }
+    .about-me-options{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-options .highlighted-btn{
+        margin:22px 0 0 0;
+    }
+    .about-me-options button{
+       width:90%
+    }
+  
+}
+@media only screen and (max-width:768px){
+    .about-me-profile{
+        display:none;
+    }
+    .about-me-details{
+        width:100%;
+        padding:15px;
+    }
+    .highlight{
+        font-size:12px;
+    }
+    .about-me-options{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-options .highlighted-btn{
+        margin:22px 0 0 0;
+    }
+    .about-me-options button{
+       width:100%
+    }
+    
+}
